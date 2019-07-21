@@ -1,0 +1,28 @@
+server:
+  port: 9000
+
+
+spring:
+  http:
+    log-request-details: true
+  redis:
+    host: localhost
+    port: 6379
+    password: pwd
+  zipkin:
+    service:
+      name: sample-gw
+
+
+#logging:
+#  level:
+#    root: debug
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
