@@ -32,7 +32,7 @@ public class GatewayDefaultConfig {
 
             String tracerId = tracer.currentSpan().context().traceIdString();
 
-                exchange.getResponse().getHeaders().set("X-BEANBROKER-TRACE", tracerId);
+//                exchange.getResponse().getHeaders().set("X-BEANBROKER-TRACE", tracerId);
 
 
         }));
